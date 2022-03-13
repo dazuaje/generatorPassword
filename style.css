@@ -229,16 +229,28 @@ input:checked[type="checkbox"]:before{
 
 
 .boxRange{ 
-  width: 50%; 
-  text-align: end; 
+  max-width: 40%; 
+  text-align: center; 
   padding: 0;
-  align-content: center;
 }
 
 
 @media (max-width:500px){
   .container{
     width: 300px;
+  }
+  .boxRange{
+    /*width: 30%;*/
+    margin-right: 20px;
+  }
+  .rangelength{
+    margin-right: 20px;
+  }
+  span{
+    margin-right: 10px;
+  }
+  .rangelength::-webkit-slider-runnable-track{
+    width: 100px;
   }
 }
 
@@ -250,6 +262,6 @@ input:checked[type="checkbox"]:before{
   margin-bottom: 20px;
 }
 span{
-  margin-right: 10px;
+  /*margin-right: 10px;*/
 }
 
