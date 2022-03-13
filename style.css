@@ -240,11 +240,14 @@ input:checked[type="checkbox"]:before{
     width: 300px;
   }
   .boxRange{
-    /*width: 30%;*/
-    margin-right: 20px;
+    /*width: 30%;
+    margin-right: 50px;
+    */
+    display: flex;
+    margin-right: 90px;
   }
   .rangelength{
-    margin-right: 20px;
+    margin: 0 20px;
   }
   span{
     margin-right: 10px;
