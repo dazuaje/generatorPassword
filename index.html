@@ -12,65 +12,47 @@
 
 <body>
     
-
-    <div class="text"></div>
-<!---Se presta-->>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!---
-        <div class="container">
-            <h1 class="title">PassWord Generator</h1>
-        -->
-            
-            
-            <!---Field---
-            <div class="generateField">
-                <div class="copy">
-                    <input type="text" class="showPassword" value="12">
-                    <img src="/images/copy.png" class="copyClipboard" alt="copy">
-                </div>
+    <div class="container">
+        <!---Field-->
+        <div class="darkmode">
+           <span>Dark Mode </span> 
+            <input type="checkbox" class="checkbox" id="changeTheme"/> 
+        </div>
+        <h1 class="title">PassWord Generator</h1>
+        
+        <div class="generateField">
+            <div class="copy">
+               <!--<input type="text" class="showPassword">-->
+            <div class="showPassword">The password Generate ....</div>
+                   
+                <img src="/images/copy.png" class="copyClipboard" alt="copy">
             </div>
-            <!---config--
+        </div>
+        <!---config-->
         <div class="config">
             <ul>
-                <li>
-                    <p>Password Length</p>
-                    <h2 class="inputResultLength" class="inputResultLength">00</h2>
+                <li class="boxLength">
+                  <!---  <p>Password Length</p>-->
+                    <h2 class="inputResultLength">00</h2>
+
+                   <div class="boxRange">
+
+                       0 <input type="range" class="rangelength" 
+                       value="0"
+                        min="0"
+                        max="30"
+                        id="rangeField"> 30
+                </div>
+
+                </li>
+                
+                
+                    <li>
+                        <p>Include Uppercase</p>
+                        <input type="checkbox" name="checkbox" id="uppercase">
+                    </li>
                     
-                    0<input type="range" class="rangelength" 
-                    value="30"
-                    min="0"
-                    max="30"
-                    id="rangeField">30
-                </li>
-                
-                
-                <li>
-                    <p>Include Uppercase</p>
-                    <input type="checkbox" name="checkbox" id="uppercase">
-                </li>
-                
-                
+                    
                 <li>
                     <p>Include Lowercase</p>
                     <input type="checkbox" name="checkbox" id="lowercase">
@@ -83,8 +65,8 @@
                     <input type="checkbox" name="checkbox" id="numbers">
                 </li>
 
-
-
+                
+                
                 <li>
                     <p>Include symbols</p>
                     <input type="checkbox" name="checkbox" id="symbols">
@@ -94,16 +76,14 @@
             </ul>
         </div>
         
-        
-        
-        
-        
+        <div class="btnContainer">
+
+            <button class="btn">Generate Password</button>
+        </div>
     </div>
-    <button class="btn">Generate Password</button>
-
-
-   <!----0<input type="range" max="30" min="0" id="rangeField" >30-->
-
+    
+        
+       
     <script src="app.js"></script>
 </body>
 
